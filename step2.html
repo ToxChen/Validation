@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comic Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="stylesheets/all.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <ul class="form-process">
+          <li class="is_completed"></li>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="form-title">
+          <h2>General Infomation</h2>
+          <h3>Tell us who you are!</h3>
+        </div>
+        <form class="form-wrap">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <label>Name<span>(optional)</span></label>
+                <input type="text" placeholder="Example Name" class="form-control">
+              </div>
+              <div class="col">
+                <label>Phone*</label>
+                <input type="text" placeholder="0912 345 678" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Birth Date<span>(optional)</span></label>
+            <div class="form-row">
+              <div class="col">
+                <select class="form-control">
+                  <option value="1">YYYY</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control">
+                  <option value="1">MM</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control">
+                  <option value="1">DD</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Address*</label>
+            <div class="form-row">
+              <div class="col">
+                <select class="form-control">
+                  <option value="1">City</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-control">
+                  <option value="1">Dist</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Address Detail" class="form-control">
+          </div><a href="step3.html" class="btn btn-submit">SUBMIT & NEXT</a>
+        </form>
+      </div>
+    </div>
+    <script src="javascripts/vendor.js"></script>
+    <script src="javascripts/all.js"></script>
+  </body>
+</html>
