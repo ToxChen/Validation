@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title Validation
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href="images/favicon.ico" rel="shortcut icon")
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
+    link(rel="stylesheet", href="stylesheets/all.css")
+  body
+
+    .container
+      .form
+
+        ul.form-process
+          li.active
+          li
+          li
+          li
+
+        .form-title
+          h2 Create Account
+          h3 Glad to see you here!
+
+        form.form-wrap
+
+          .form-group
+            label Account
+            input.form-control(type="email" placeholder="example@email.com" required)
+
+          .form-group
+            label Password
+            input.form-control(type="password" placeholder="●●●●●●●●")
+
+          .form-group
+            label Comfirm Password
+            input.form-control(type="password" placeholder="●●●●●●●●")
+
+          a(href="step2.html").btn.btn-submit SUBMIT & NEXT
+    
+    script(src="javascripts/vendor.js")
+    script(src="javascripts/all.js")

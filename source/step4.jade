@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    title Comic Viewer
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href="images/favicon.ico" rel="shortcut icon")
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
+    link(rel="stylesheet", href="stylesheets/all.css")
+  body
+
+    .container
+      .form
+
+        ul.form-process
+          li.is_completed
+          li.is_completed
+          li.is_completed
+          li.active
+          
+        .form-title
+          h2 Payment Method
+          h3 Add your credit card infomation!
+
+        form.form-wrap
+
+          .form-group
+            label Card Number
+            .form-group-graphic
+              input.form-control(type="text" placeholder="1234 5678 9012 3456")
+              i.fab.fa-cc-visa
+
+          .form-group
+            .form-row
+              .col
+                label Cardholder Name
+                input.form-control(type="text" placeholder="EXAMPLE NAME")
+              .col
+                label Bank Name
+                input.form-control(type="text" placeholder="EXAMPLE BANK")
+
+          .form-group
+            .form-row
+              .col
+                label CVV
+                input.form-control(type="text" placeholder="123")
+              .col
+                label Expire Date
+                select.form-control
+                  option(value="1") MM
+              .col
+                label &nbsp;
+                select.form-control
+                  option(value="1") DD
+
+          a(href="completed.html").btn.btn-submit DONE
+    
+    script(src="javascripts/vendor.js")
+    script(src="javascripts/all.js")

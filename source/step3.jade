@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Comic Viewer
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href="images/favicon.ico" rel="shortcut icon")
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
+    link(rel="stylesheet", href="stylesheets/all.css")
+  body
+
+    .container
+      .form
+
+        ul.form-process
+          li.is_completed
+          li.is_completed
+          li.active
+          li
+          
+        .form-title
+          h2 Update Profile Picture
+          h3 We wanna know you more!
+
+        form.form-wrap
+
+          .form-group
+            label.upload(for="uploadpic")
+              input.form-control(type="file" id="uploadpic" placeholder="Example Name")
+              .upload-content
+                .upload-img
+                  i.fas.fa-images
+                .upload-remind
+                  span UPLOAD UP TO 3 PHOTOS
+                  span MAX SIZE: 150*150px
+
+          a(href="step4.html").btn.btn-submit SUBMIT & NEXT
+    
+    script(src="javascripts/vendor.js")
+    script(src="javascripts/all.js")
